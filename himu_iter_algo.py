@@ -22,8 +22,7 @@ def binary_search(arr, x):
 
 arr = ['A', 'C', 'E', 'B', 'F', 'L', 'M', 'N', 'D', 'I']
 
-x = "N"
-result = binary_search(arr, x)
+ result = binary_search(arr, x)
 
 if result != -1:
 	print("Element is present at index", result, '& Value is', arr[result])
