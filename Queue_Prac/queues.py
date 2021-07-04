@@ -1,58 +1,59 @@
-class Queue1:
+class Queue:
     def __init__(self):
-        self.queue1 = []
+        self.queue = []
+        # self.size = size
 
-    def size1(self):
-        print("Length of Queue :", len(self.queue1))
+    def size(self):
+        return len(self.queue)
 
-    def is_Empty(self):
-        return self.queue1 == []
+    def isEmpty(self):
+        return self.queue == []
 
-    def is_Full(self):
-        return len(self.queue1) == self.size1
+    def isFull(self):
+        return len(self.queue) == self.size
 
-    def enqueue1(self, item1):
-        if self.is_Full() != True:
-            self.queue1.append(item1)
+    def enqueue(self, item):
+        if self.isFull() != True:
+            self.queue.append(item)
         else:
             print("Queue is full.")
         
-    def dequeue1(self):
-        if self.is_Empty() != True:
-            self.queue1.pop(0)
+    def dequeue(self):
+        if self.isEmpty() != True:
+            self.queue.pop(0)
         else:
             print("Queue is empty")
 
     def peek(self):
-        if self.is_Empty() != True:
-            print("Peak element :", self.queue1[0])
+        if self.isEmpty() != True:
+            print("Peek element :", self.queue[0])
         else:
             print('Queue is Empty!')
 
-    def display1(self):
-        print("QUEUE : ", self.queue1)
+    def display(self):
+        print("QUEUE : ", self.queue)
 
-myQueue = Queue1()
-myQueue.enqueue1(4)
-myQueue.enqueue1(5)
-myQueue.enqueue1(6)
+
+myQueue = Queue()
+myQueue.enqueue(4)
+myQueue.enqueue(5)
+myQueue.enqueue(6)
     
-myQueue.display1()
+myQueue.display()
 
 myQueue.peek()
 
-myQueue.dequeue1()
-myQueue.dequeue1()
+myQueue.dequeue()
+myQueue.dequeue()
 
-myQueue.display1()
+myQueue.display()
 
 myQueue.peek()
 
-myQueue.display1()
+myQueue.display()
 
-myQueue.dequeue1()
+myQueue.dequeue()
 
-myQueue.display1()
+myQueue.display()
 
-myQueue.size1()
 myQueue.peek()
