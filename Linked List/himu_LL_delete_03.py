@@ -17,7 +17,7 @@ class LinkedList:
 	def deleteNode(self, key):
 		
 		temp = self.head
-
+		print('this', temp)
 		if (temp is not None):
 			if (temp.data == key):
 				self.head = temp.next

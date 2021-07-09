@@ -69,6 +69,7 @@ class LinkedList:
         while new_node != None:
             if new_node.data == data:
                 new_node = Node(data, None)
+                return
 
             new_node = new_node.next
 
@@ -110,6 +111,11 @@ ll.print_func()
 
 ll.search_ll(6)
 ll.insert_at(9, 60)
+ll.print_func()
+print(ll.get_len())
+
+
+ll.remove(55)
 ll.print_func()
 print(ll.get_len())
 
