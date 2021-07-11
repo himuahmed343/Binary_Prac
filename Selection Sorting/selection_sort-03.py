@@ -16,6 +16,6 @@ def select_sort(data_list):
 
 
 
-data_list = [40, 20, 60, 75, 35, 95]
+data_list = [85, 65, 25, 45, 35, 95]
 select_sort(data_list)
 print('Sorted List:', data_list)
