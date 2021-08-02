@@ -1,0 +1,15 @@
+def insertion_sort(data):
+    n = len(data)
+    for i in range(1, n):
+        item = data[i]
+        j = i - 1
+        while j >= 0 and data[j] < item:
+            temp = data[j]
+            data[j] = data[j + 1]
+            data[j + 1] = temp
+            j -= 1
+
+
+data_list = [1, 3, 2, 5]
+insertion_sort(data_list)
+print(data_list)
